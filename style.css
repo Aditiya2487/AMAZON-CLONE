@@ -165,7 +165,43 @@ span{
 .box-content{
     margin-left: 16px;
     margin-right: 16px;
+    height: 100%; /* Ensure the box content fills the available height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: space-between; /* Add space between elements */
 }
 .box-content p{
     color: #007185;
+    overflow: hidden; /* Prevent content overflow */
+    text-overflow: ellipsis; /* Truncate long text with an ellipsis */
+    white-space: nowrap;
+}
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 0.5rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+ul{
+    margin-top: 10px;
+}
+ul a{
+    font-size: 0.85rem;
+    margin-top:20px;
+    color: #dddddd;
+    display: block;
 }
